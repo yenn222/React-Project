@@ -6,13 +6,20 @@
     border-bottom: 1px solid rgb(240, 240, 240);
 }
 
-.TodoItem .checkbox_col {
+/*.TodoItem .checkbox_col {*/
+/*    width: 20px;*/
+/*}*/
+.TodoItem .checkbox_col button{
     width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
 }
 
 .TodoItem .checkbox_col:active {
     width: 20px;
-    content:'f00c';
+    height: 20px;
+    content: 'f00c';
 }
 
 .TodoItem .title_col {
