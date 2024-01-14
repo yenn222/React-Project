@@ -8,4 +8,5 @@ https://mariedays.tistory.com/m/113
 ![image](https://github.com/yenn222/React-Project/assets/131340704/07bba2eb-a149-4afd-b3ee-40e3f2860056)
 
 ### 20240116
-![image](https://github.com/yenn222/React-Project/assets/131340704/59a3f270-5265-4eea-8956-d44d9ac4d3ac)
+![image](https://github.com/yenn222/React-Project/assets/131340704/2d8a1c93-97f4-4e16-be08-bbad562ff2b7)
+
