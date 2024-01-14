@@ -1,9 +1,9 @@
+
 .App{
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
-
-
+  margin-top: 50px;
   box-sizing: border-box;
   padding: 30px; /* +10px */
 
