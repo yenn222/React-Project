@@ -1,6 +1,6 @@
 import "./TodoItem.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircle} from "@fortawesome/free-regular-svg-icons";
+import { faCircle } from "@fortawesome/free-regular-svg-icons";
 import {useState} from "react";
 import {faCheck} from "@fortawesome/free-solid-svg-icons";
 

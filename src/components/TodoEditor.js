@@ -8,7 +8,7 @@ const TodoEditor = ({ onCreate, mockTodo }) => {
         setContent(e.target.value);
     }
     const onSubmit = () => {
-        if(!content) {
+        if (!content) {
             inputRef.current.focus();
             return;
         }
@@ -24,8 +24,8 @@ const TodoEditor = ({ onCreate, mockTodo }) => {
         <div className="TodoEditor">
             <div className="editor_wrapper">
                 <input
-                    ref = {inputRef}
-                    value = {content}
+                    ref={inputRef}
+                    value={content}
                     onChange={onChangeContent}
                     onKeyDown={onKeyDown}
                     placeholder="새로운 Todo..."/>
