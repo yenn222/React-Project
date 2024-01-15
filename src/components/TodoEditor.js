@@ -1,11 +1,19 @@
 import "./TodoEditor.css";
 import {useRef, useState} from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faCheck} from "@fortawesome/free-solid-svg-icons";
+import {faCircle} from "@fortawesome/free-regular-svg-icons";
 
 const TodoEditor = ({ onCreate, mockTodo }) => {
     const [content, setContent] = useState("");
     const inputRef = useRef();
+    const [inputbtn, setInputbtn] = useState(false);
     const onChangeContent = (e) => {
         setContent(e.target.value);
+    }
+
+    const onInput = () => {
+        setInputbtn(!inputbtn);
     }
     const onSubmit = () => {
         if (!content) {
@@ -23,13 +31,13 @@ const TodoEditor = ({ onCreate, mockTodo }) => {
     return (
         <div className="TodoEditor">
             <div className="editor_wrapper">
-                <input
+                {inputbtn ? <input
                     ref={inputRef}
                     value={content}
                     onChange={onChangeContent}
                     onKeyDown={onKeyDown}
-                    placeholder="새로운 Todo..."/>
-                <button onClick={onSubmit}>+</button>
+                    placeholder="새로운 Todo..."/> : null}
+                <button  onClick={onInput}>+</button>
             </div>
         </div>
     );
