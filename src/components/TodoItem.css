@@ -24,8 +24,8 @@
 
 .TodoItem .title_col {
     flex: 1;
-    text-decoration: underline lightgray;
-
+    /*text-decoration: underline lightgray;*/
+    border-bottom: 1px solid gray;
 }
 
 .TodoItem .date_col {
