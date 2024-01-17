@@ -1,10 +1,11 @@
 .TodoItem {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgb(240, 240, 240);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(240, 240, 240);
 }
+
 
 .TodoItem .checkbox_col {
     width: 20px;

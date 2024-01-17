@@ -1,5 +1,6 @@
 import "./TodoItem.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 // import { faCheck } from "@fortawesome/free-solid-svg-icons";
@@ -28,6 +29,7 @@ const TodoItem = ({ id, content, isDone, createdDate, onUpdate, onDelete }) => {
             </div>
         </div>
     );
+
 };
 
 export default TodoItem;
