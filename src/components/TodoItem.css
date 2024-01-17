@@ -6,72 +6,84 @@
   border-bottom: 1px solid rgb(240, 240, 240);
 }
 
-/*.TodoItem .checkbox_col {*/
-/*    width: 20px;*/
-/*}*/
-.TodoItem .checkbox_col button {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
+
+.TodoItem .checkbox_col {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 2px solid #526be0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.5s;
+
 }
 
-.TodoItem .checkbox_col:active {
-  width: 20px;
-  height: 20px;
-  content: "f00c";
+.TodoItem .checkbox_col.active {
+    background-color: #526be0;
+    color: #fff;
 }
 
 .TodoItem .title_col {
-  flex: 1;
-  /*text-decoration: underline lightgray;*/
+    flex: 1;
+    color: #606060;
+    transition: color 0.5s;
 }
 
+/*.TodoItem.checked .title_col {*/
+/*    text-decoration: line-through;*/
+/*    color: #cbcbcb;*/
+/*}*/
+
 .TodoItem .date_col {
-  font-size: 14px;
-  color: gray;
+    font-size: 14px;
+    color: #8a8a8a;
 }
 
 .TodoItem .btn_col button {
-  cursor: pointer;
-  color: gray;
-  font-size: 14px;
-  border: none;
-  border-radius: 5px;
-  padding: 5px;
+    cursor: pointer;
+    color: #9a9a9a;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
 }
+
 .animated-text {
-  position: relative;
-  animation: slideUp 0.3s ease-in-out;
-  color: gray;
+    position: relative;
+    animation: slideUp 0.5s ease-in-out;
+    color: #cbcbcb;
 }
 
 .animated-text::after {
-  content: "";
-  position: absolute;
-  bottom: 50%;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: gray;
-  animation: strikeThrough 0.5s ease-in-out;
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #cbcbcb;
+    animation: strikeThrough 0.5s ease-in-out;
 }
 
 @keyframes slideUp {
-  0% {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes strikeThrough {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
 }
