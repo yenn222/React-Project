@@ -55,7 +55,7 @@ function App() {
         <div className="App">
             <Header />
             <h3>{idRef.current} tasks</h3>
-            <TodoEditor onCreate = {onCreate}/>
+            <TodoEditor/>
             <TodoList todo = {todo} onUpdate = {onUpdate} onDelete={onDelete}/>
         </div>
     );
