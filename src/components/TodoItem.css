@@ -18,7 +18,6 @@
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.5s;
-
 }
 
 .TodoItem .checkbox_col.active {
